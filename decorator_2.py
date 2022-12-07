@@ -4,11 +4,11 @@ from datetime import datetime
 
 def logger(path):
     
-    date_time_begin = str(datetime.now()) + '\n'
-    
     def __logger(old_function):
 
         def new_function(*args, **kwargs):
+
+            date_time_begin = str(datetime.now()) + '\n'
 
             ars_function = f'позиционные - {args}, именнованные - {kwargs}'
 

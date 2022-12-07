@@ -4,9 +4,9 @@ from datetime import datetime
 
 def logger(old_function):
 
-    date_time_begin = str(datetime.now()) + '\n'
-
     def new_function(*args, **kwargs):
+
+        date_time_begin = str(datetime.now()) + '\n'
 
         ars_function = f'позиционные - {args}, именнованные - {kwargs}'
 
